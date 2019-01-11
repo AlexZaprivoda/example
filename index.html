@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Площадь прямоуголька
+      alert("Посчитаем площадь прямоугольника");
+      var a = +prompt("Сторона А прямоугольника, в см");
+      var b = +prompt("Сторона B прямоугольника, в см");
+      document.write("<h2 style='margin:5px 0;'>Площадь прямоугольника</h2>");
+      document.write("Сторона А:" + a + " см <br/>");
+      document.write("Сторона B:" + b + " см <br/>");
+      document.write(
+        "Площадь прямоугольника:" + a * b + " см<sup>2</sup><br/><br/>"
+      );
+      // Объем сферы
+      alert("А теперь посчитаем обьем сферы");
+      var r = +prompt("Радиус сферы, в см");
+      var res = (4 / 3) * 3.14 * r ** 3;
+      res = Math.round(res * 100) / 100;
+      document.write("<h2 style='margin:5px 0;'>Объем сферы</h2>");
+      document.write("Радиус сферы:" + r + " см <br/>");
+      document.write("Объем сферы:" + res + " см<sup>3</sup><br/><br/>");
+      // Площадь ромба
+      alert("Еще немного и посчитаем площадь ромба");
+      document.write("<h2 style='margin:5px 0;'>Площадь ромба</h2>");
+      var d = +prompt("Сторона ромба, в см");
+      document.write("Сторона ромба:" + d + " см <br/>");
+      document.write("Площадь ромба:" + d * 4 + " см<sup>2</sup><br/><br/>");
+      // Площадь треугольника по формуле Герона
+      alert("Осталось совсем чуть-чуть и посчитаем площадь треугольника");
+      document.write("<h2 style='margin:5px 0;'>Площадь треугольника</h2>");
+      var p1 = +prompt("Сторона А треугольника, в см");
+      var p2 = +prompt("Сторона B треугольника, в см");
+      var p3 = +prompt("Сторона C треугольника, в см");
+      var p = (1 / 2) * (p1 + p2 + p3);
+      var s = (p * (p - p1) * (p - p2) * (p - p3)) ** 0.5;
+      s = Math.round(s * 100) / 100;
+      document.write("Сторона А:" + p1 + " см <br/>");
+      document.write("Сторона B:" + p2 + " см <br/>");
+      document.write("Сторона C:" + p3 + " см <br/>");
+      document.write("Площадь треугольника:" + s + " см<sup>2</sup><br/><br/>");
+    </script>
+  </body>
+</html>
